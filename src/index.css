@@ -1,0 +1,207 @@
+/* .sub {
+    height: 30vh;
+    width: 30vw;
+    background-color: blueviolet;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.sub>img {
+    height: 100%;
+    width: 100%;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Josefin+Sans&family=Outfit&display=swap');
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+#root {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #b4eff5;
+}
+
+.main {
+    min-height: 70vh;
+    width: 25vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+    align-items: center;
+    background-color: #c7ecee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heading {
+    height: 5rem;
+    width: 95%;
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background-color: #3c6382;
+    color: #82ccdd;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task {
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+input {
+    height: 95%;
+    width: 85%;
+    border: none;
+    border-bottom: 3px solid #0a3d62;
+    outline: none;
+    font-size: 3rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: #c7ecee;
+    color: #3c6382;
+    font-weight: 400;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #95afc0;
+}
+
+button:hover {
+    background-color: #1dd1a1;
+}
+
+.completed {
+    width: 100%;
+    height: max-content;
+    position: relative;
+}
+
+.pastItem {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+}
+li {
+    list-style: none;
+    width: 95%;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #0a3d62;
+}
+
+.pastItem>button {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastItem>button:hover {
+    background-color: #ff6b6b;
+}
+@media screen and (max-width:1280px) {
+    .pastItem>button{
+        font-size: 0.8rem; 
+    }
+    input {
+        font-size: 2.5rem;
+    }  
+}
+@media screen and (max-width:920px) {
+    .pastItem>button{
+        font-size: 0.8rem; 
+    }
+    input {
+        font-size: 2.2rem;
+    }  
+    .pastItem>button{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    li{
+        font-size: 2rem;
+    }
+    button {
+        height: 3.3rem;
+        width: 3.3rem;
+    }
+    .main {
+        min-height: 65vh;
+        width: 40vw;
+    }
+}
+@media screen and (max-width:640px) {
+    .pastItem>button{
+        font-size: 0.6rem; 
+    }
+    input {
+        font-size: 2rem;
+    }  
+    .pastItem>button{
+        height: 2.1rem;
+        width: 2.1rem;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    button {
+        height: 3rem;
+        width: 3rem;
+    }
+    .main {
+        min-height: 50vh;
+        width: 40vw;
+    }
+}
+@media screen and (max-width:640px) {
+    .pastItem>button{
+        font-size: 0.5rem; 
+    }
+    input {
+        font-size: 2rem;
+    }  
+    li{
+        font-size: 1.5rem;
+    }
+    button {
+        height: 3rem;
+        width: 3rem;
+    }
+    .main {
+        min-height: 70vh;
+        width: 80vw;
+    }
+}
